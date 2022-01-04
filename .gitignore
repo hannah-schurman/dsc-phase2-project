@@ -1,5 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+coed_mess.ipynb
+data_clean_patrick.ipynb
 *.py[cod]
 *$py.class
 .DS_Store
