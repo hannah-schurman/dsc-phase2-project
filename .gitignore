@@ -1,8 +1,12 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+project-hannah.ipynb
+coed_mess.ipynb
+data_clean_patrick.ipynb
 *.py[cod]
 *$py.class
 .DS_Store
+**/.DS_Store
 # C extensions
 *.so
 
