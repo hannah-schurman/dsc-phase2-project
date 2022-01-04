@@ -1,6 +1,11 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+<<<<<<< HEAD
 project-hannah.ipynb
+=======
+coed_mess.ipynb
+data_clean_patrick.ipynb
+>>>>>>> main
 *.py[cod]
 *$py.class
 .DS_Store
