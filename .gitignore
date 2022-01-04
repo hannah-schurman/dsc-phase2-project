@@ -2,6 +2,8 @@
 __pycache__/
 coed_mess.ipynb
 data_clean_patrick.ipynb
+data_clean_patrick-Copy1.ipynb
+regressions.ipynb
 *.py[cod]
 *$py.class
 .DS_Store
