@@ -79,9 +79,9 @@ Below is an image showing the results of our geoparsing method which converted l
 
 
 # Conclusion
-Our final linear regression model concluded an accuracy of %80.1 based on the R^2 score. 
+Our final linear regression model concluded an accuracy of %80.1 based on the R^2 score. This final regression model maximized model score and minimized mean squared error based on our features
 
-This data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) we have created a model that can predict house prices based on these features with an %80.1 accuracy
+This data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) we have created a model that can predict a houses price based on these features with an %80.1 accuracy
 
 
 # Further Questions
