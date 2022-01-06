@@ -1,12 +1,9 @@
 <img src="images/housing_market.jpg_fit=scale" width=400 height=400 />
 
 # King County, WA Housing Sales Analysis
----
 
 
 # Overview
----
-
 Our team was hired by a hot-shot real estate agency to create a model which can predict the price of a house in the King County area based on differnt features. Our analysis concluded that the best features for prediction of housing prices are the following: city/town/neighborhood location, square footage, number of bedrooms, whether it's on the water, how good of a view it has, the property condition, and the age of the property. 
 
 To acheive our goal, we used multiple linear regression models to analyse housing sales in King County, WA using housing data gathered within the county from 2014 and 2015. For this analysis, we used Ordinary Least Squared, Train-Test Split, and K-Fold Cross Validation regression models to create an efficient predictive model. 
@@ -15,7 +12,6 @@ Our analysis shows that based on the R^2 scores, our regression model's accuracy
 
 
 # Business Understanding
----
 Our stakeholder wants to be able to predict the price of a house based on certain features provided by their customers. 
 
 Our project will answer the following questions:
@@ -24,7 +20,6 @@ Our project will answer the following questions:
 
 
 # Data Understanding
----
 The data used for this project was sourced from a dataset called ‘King County House Sales’ and contains information regarding housing sales statistics in King County, WA.
 
 ##### The dataset contains the following columns:
@@ -53,7 +48,6 @@ The data used for this project was sourced from a dataset called ‘King County 
 
 
 # Modeling
----
 This project uses linear regression models, such as Ordinary Least Squared, Train-Test Split, and K-Fold Cross Validation to provide predictive modeling for our real estate stakeholder
 
 We began by splitting our data frame into three section by feature type: 
@@ -67,7 +61,6 @@ Finally, we combined the updated selection of column features and created a fina
 
 
 # Regression Results
----
 Our regression models results are as follows:
 
 * House feature regression model concluded that bedrooms, living square footage, waterfront, and view quality columns were statistically significant with price and independent of eachother
@@ -81,40 +74,33 @@ Our 'House Predicted Price' scatter plot shows how well our predicted regression
 
 
 Below is an image showing the results of our geoparsing method which converted lat and long coordinates into city/town/neighborhood data to increase regression model performance
+
 <img src="images/house_sales_map.png"/>
 
 
 # Conclusion
----
 Our final linear regression model can conclude an accuracy of %80.1 based on the R^2 score. 
-
-Our House Predicted Price scatter plot shows how well our predicted regression model fits the individual selling prices of houses
 
 This data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) we have created a model that can predict house prices based on features with an %80.1 accuracy
 
 
 # Next Steps
----
 
 
 # Further Questions
----
 See the full analysis in the [Jupyter Notebook](https://github.com/hannah-schurman/dsc-phase2-project/blob/main/housing_sales_modeling.ipynb) or review [this presentation]()
 
 For any additional questions, please contact Patrick Anastasio, Sergey Syrvachev, or Hannah Schurman
 
 
 # Repository Structure
----
+```
 ├── data
-
 ├── images
-
 ├── README.md
-
 ├── housing_sales_modeling.ipynb
-
 ├── Geo_parsing.ipynb
-
 └── Housing_Sales_Modeling_Presentation.pdf
+```
+
 
