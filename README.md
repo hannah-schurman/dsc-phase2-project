@@ -79,7 +79,7 @@ Our regression models results are as follows:
 
 * Instead of using the zipcode column, we opted for geoparsing the latitude and longitude columns in hopes that the data in the form of city/town/neighborhood would provide a better model. We concluded that using neighborhood was significantly more effective than zipcode and improved our regression model by about %15 accuracy.
 
-Our 'House Predicted Price' scatter plot shows how well our predicted regression model fits the individual selling prices of houses
+Our 'House Predicted Price' scatter plot shows how well our finalized predicted regression model fits the individual selling prices of houses
 
 <img src="images/final_regression_plot.png"/>
 
@@ -92,6 +92,8 @@ Below is an image showing the results of our geoparsing method which converted l
 Our final linear regression model concluded an accuracy of %80.1 based on the R^2 score. This final regression model maximized model score and minimized mean squared error based on our features
 
 This data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) we have created a model that can predict a houses price based on these features with an %80.1 accuracy
+
+We have used this regression calculator to predict the average housing prices for each neighborhood to show us where the predicted most-to-least expensive houses are located
 
 
 # Further Questions
