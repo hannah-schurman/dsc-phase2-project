@@ -7,13 +7,11 @@
 # Overview
 ---
 
-Our team was hired by a hot-shot real estate agency to create a model which predicts the prices of houses in the King County area based on differnt features. These features include: city/town/neighborhood location, square footage, number of bedrooms, whether it's on the water, how good of a view it has, ...
+Our team was hired by a hot-shot real estate agency to create a model which can predict the price of a house in the King County area based on differnt features. Our analysis concluded that the best features for prediction of housing prices are the following: city/town/neighborhood location, square footage, number of bedrooms, whether it's on the water, how good of a view it has, the property condition, and the age of the property. 
 
-To acheive our goal, we will use multiple linear regression models to analyse housing sales in King County, WA  using housing data gathered within the county from 2014 and 2015. 
+To acheive our goal, we used multiple linear regression models to analyse housing sales in King County, WA using housing data gathered within the county from 2014 and 2015. For this analysis, we used Ordinary Least Squared, Train-Test Split, and K-Fold Cross Validation regression models to create an efficient predictive model. 
 
-For this analysis, we have used regression models such as, Ordinary Least Squared, Train-Test Split, and K-Fold Cross Validation models to create an efficient predictive model. 
-
-Our analysis shows that based on the R^2 scores, our regression model's accuracy is ...
+Our analysis shows that based on the R^2 scores, our regression model's accuracy is 80.1% with 95% conf interval +-3.9% 
 
 
 # Business Understanding
@@ -70,11 +68,29 @@ Finally, we combined the updated selection of column features and created a fina
 
 # Regression Results
 ---
+Our regression models results are as follows:
 
+* House feature regression model concluded that bedrooms, living square footage, waterfront, and view quality columns were statistically significant with price and independent of eachother
+
+* House condition regression model concluded that property condition and age are statistically significant with housing prices and independent of eachother
+
+* Instead of using the zipcode column, we opted for geoparsing the latitude and longitude columns in hopes that the data in the form of city/town/neighborhood would provide a better model. We concluded that using neighborhood was significantly more effective than zipcode and improved our regression model by about %15 accuracy.
+
+Our 'House Predicted Price' scatter plot shows how well our predicted regression model fits the individual selling prices of houses
+<img src="images/PricevsPredict_scatter.png"/>
+
+
+Below is an image showing the results of our geoparsing method which converted lat and long coordinates into city/town/neighborhood data to increase regression model performance
+<img src="images/house_sales_map.png"/>
 
 
 # Conclusion
 ---
+Our final linear regression model can conclude an accuracy of %80.1 based on the R^2 score. 
+
+Our House Predicted Price scatter plot shows how well our predicted regression model fits the individual selling prices of houses
+
+This data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) we have created a model that can predict house prices based on features with an %80.1 accuracy
 
 
 # Next Steps
@@ -83,16 +99,22 @@ Finally, we combined the updated selection of column features and created a fina
 
 # Further Questions
 ---
-See the full analysis in the Jupyter Notebook or review this presentation
+See the full analysis in the [Jupyter Notebook](https://github.com/hannah-schurman/dsc-phase2-project/blob/main/housing_sales_modeling.ipynb) or review [this presentation]()
 
-For any additional questions, please contact ....
+For any additional questions, please contact Patrick Anastasio, Sergey Syrvachev, or Hannah Schurman
 
 
 # Repository Structure
 ---
 ├── data
+
 ├── images
+
 ├── README.md
+
 ├── housing_sales_modeling.ipynb
+
+├── Geo_parsing.ipynb
+
 └── Housing_Sales_Modeling_Presentation.pdf
 
