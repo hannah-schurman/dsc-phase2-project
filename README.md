@@ -86,8 +86,6 @@ This data tells us that with our selected feature columns (neighborhood, age, gr
 # Further Questions
 See the full analysis in the [Jupyter Notebook](https://github.com/hannah-schurman/dsc-phase2-project/blob/main/housing_sales_modeling.ipynb) or review [this presentation]()
 
-For any additional questions, please contact Patrick Anastasio, Sergey Syrvachev, or Hannah Schurman
-
 
 # Repository Structure
 ```
