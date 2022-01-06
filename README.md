@@ -89,9 +89,9 @@ Below is an image showing the results of our geoparsing method which converted l
 
 
 # Conclusion
-Our final linear regression model concluded an accuracy of %80.1 based on the R^2 score. This final regression model maximized model score and minimized mean squared error based on our features
+Our finalized linear regression calculator shows that it is able to account for %80.1 of the variance in price. This final regression maximizes model score and minimizes root mean squared error based on our features.
 
-This data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) we have created a model that can predict a houses price based on these features with an %80.1 accuracy
+Overall, this data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) we have created a model that can predict a houses price based on these features. Our model shows that %80.1 of the variance in price can be explained by our selected features, which allows us to conclude that this model is a good fit for our data.
 
 We have used this regression calculator to predict the average housing prices for each neighborhood to show us where the predicted most-to-least expensive houses are located
 
@@ -102,12 +102,12 @@ See the full analysis in the [Jupyter Notebook](https://github.com/hannah-schurm
 
 # Repository Structure
 ```
-├── data
-├── images
-├── README.md
-├── housing_sales_modeling.ipynb
-├── Geo_parsing.ipynb
-└── Housing_Sales_Modeling_Presentation.pdf
+├── data                                       #shows pickle files for geolocation as well as king county dataset
+├── images                                     #contains visualizations produced by our models
+├── README.md  
+├── housing_sales_modeling.ipynb               #regression models
+├── Geo_parsing.ipynb                          #methodology used for geolocating coordinates
+└── Housing_Sales_Modeling_Presentation.pdf    #non-technical stakeholder presentation on regression findings
 ```
 
 
