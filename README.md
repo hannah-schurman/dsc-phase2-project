@@ -1,4 +1,4 @@
-<img src="images/housing_market.jpg_fit=scale"/>
+<img src="images/housing_market.jpg_fit=scale" width=400 height=300 />
 
 # King County, WA Housing Sales Analysis
 
