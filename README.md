@@ -79,7 +79,7 @@ Our regression models results are as follows:
 
 * Instead of using the zipcode column, we opted for geoparsing the latitude and longitude columns in hopes that the data in the form of city/town/neighborhood would provide a better model. We concluded that using neighborhood was significantly more effective than zipcode and improved our regression model by about %15 accuracy.
 
-Our 'House Predicted Price' scatter plot shows how well our predicted regression model fits the individual selling prices of houses
+Our 'House Predicted Price' scatter plot shows how well our finalized predicted regression model fits the individual selling prices of houses
 
 <img src="images/final_regression_plot.png"/>
 
