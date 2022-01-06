@@ -53,7 +53,7 @@ This project uses linear regression models, such as Ordinary Least Squared, Trai
 We began by splitting our data frame into three section by feature type: 
 1) House features such as square footage and room numbers
 2) House quality and age
-3) House location within King County (City/Town/Suburb). This process was done through geo locating the latitude and longitude columns
+3) House location within King County (City/Town/Suburb). This process was done through geoparsing the latitude and longitude columns
 
 We then created linear regression models for each section and narrowed down our features through assessing coorrelation and finding potential multicollinearity issues
 
@@ -72,19 +72,15 @@ Our regression models results are as follows:
 Our 'House Predicted Price' scatter plot shows how well our predicted regression model fits the individual selling prices of houses
 <img src="images/PricevsPredict_scatter.png"/>
 
-
 Below is an image showing the results of our geoparsing method which converted lat and long coordinates into city/town/neighborhood data to increase regression model performance
 
 <img src="images/house_sales_map.png"/>
 
 
 # Conclusion
-Our final linear regression model can conclude an accuracy of %80.1 based on the R^2 score. 
+Our final linear regression model concluded an accuracy of %80.1 based on the R^2 score. 
 
-This data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) we have created a model that can predict house prices based on features with an %80.1 accuracy
-
-
-# Next Steps
+This data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) we have created a model that can predict house prices based on these features with an %80.1 accuracy
 
 
 # Further Questions
