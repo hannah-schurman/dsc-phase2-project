@@ -46,6 +46,16 @@ The data used for this project was sourced from a dataset called ‘King County 
 * ```sqft_living15```: Average size of living space for the closest 15 houses
 * ```sqft_lot15```: Average size of lot for the closest 15 houses
 
+In addition to the King County Housing Sales dataset, we used data from the following sources:
+
+Open Street Maps 
+The largest website related to geographical maps and geolocation coding of locations
+website: www.openstreetmap.org) 
+
+Washington Geospatial Open Data
+Official website of Washington state, US. The website contains different geospatial information about cities and their boundaries. 
+Website: https://geo.wa.gov/
+
 
 # Modeling
 This project uses linear regression models, such as Ordinary Least Squared, Train-Test Split, and K-Fold Cross Validation to provide predictive modeling for our real estate stakeholder
