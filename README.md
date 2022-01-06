@@ -93,6 +93,8 @@ Our final linear regression model concluded an accuracy of %80.1 based on the R^
 
 This data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) we have created a model that can predict a houses price based on these features with an %80.1 accuracy
 
+We have used this regression calculator to predict the average housing prices for each neighborhood to show us where the predicted most-to-least expensive houses are located
+
 
 # Further Questions
 See the full analysis in the [Jupyter Notebook](https://github.com/hannah-schurman/dsc-phase2-project/blob/main/housing_sales_modeling.ipynb) or review [this presentation]()
