@@ -96,7 +96,7 @@ We have used this regression calculator to predict the average housing prices fo
 
 
 # Further Questions
-See the full analysis in the [Jupyter Notebook](https://github.com/hannah-schurman/dsc-phase2-project/blob/main/housing_sales_modeling.ipynb) or review [this presentation]()
+See the full analysis in the [Jupyter Notebook](https://github.com/hannah-schurman/dsc-phase2-project/blob/main/housing_sales_modeling.ipynb) or review [this presentation](https://github.com/hannah-schurman/dsc-phase2-project/blob/main/housing_sales_presentation.pdf)
 
 
 # Repository Structure
