@@ -60,30 +60,30 @@ Website: https://geo.wa.gov/
 # Modeling
 This project uses linear regression models, such as Ordinary Least Squared, Train-Test Split, and K-Fold Cross Validation to provide predictive modeling for our real estate stakeholder
 
-We began by splitting our data frame into three section by feature type: 
+We began by splitting our data frame into three sections by feature type: 
 1) House features such as square footage and room numbers
 2) House quality and age
 3) House location within King County (City/Town/Suburb). This process was done through geoparsing the latitude and longitude columns
 
-We then created linear regression models for each section and narrowed down our features through assessing coorrelation and finding potential multicollinearity issues
+We then created linear regression models for each section, iterating through different feature combinations, and narrowed down our features by assessing coorrelation, eliminating potential multicollinearity issues, and determining the most statistically significant combination.
 
-Finally, we combined the updated selection of column features and created a final regression model and a corresponding visualization for our overal prediction
+Finally, we combined the updated selection of column features and created a final regression model and corresponding visualization for our overall prediction. Our final model gave us our highest R2 score with the lowest RMSE.
 
 
 # Regression Results
-Our regression models results are as follows:
+Our regression model results are as follows:
 
-* House feature regression model concluded that bedrooms, living square footage, waterfront, and view quality columns were statistically significant with price and independent of eachother
+* House feature regression model concluded that bedrooms, living square footage, waterfront, and view quality columns were statistically significant with price and independent of each other
 
-* House condition regression model concluded that property condition and age are statistically significant with housing prices and independent of eachother
+* House quality regression model concluded that property grade and age are statistically significant with housing prices and independent of each other
 
-* Instead of using the zipcode column, we opted for geoparsing the latitude and longitude columns in hopes that the data in the form of city/town/neighborhood would provide a better model. We concluded that using neighborhood was significantly more effective than zipcode and improved our regression model by about %15 accuracy.
+* Instead of using the zipcode column, we opted for geoparsing the latitude and longitude columns in hopes that the data in the form of city/town/neighborhood would provide a better model. We concluded that using neighborhood was significantly more effective than zipcode and improved our R2 score by about %15.
 
 Our 'House Predicted Price' scatter plot shows how well our finalized predicted regression model fits the individual selling prices of houses
 
 <img src="images/final_regression_plot.png"/>
 
-Below is an image showing the results of our geoparsing method which converted lat and long coordinates into city/town/neighborhood data to increase regression model performance
+Below is an image showing the results of our geoparsing method which converted latitude and longitude coordinates into city/town/neighborhood data to increase regression model performance
 
 <img src="images/house_sales_map.png"/>
 
@@ -91,9 +91,9 @@ Below is an image showing the results of our geoparsing method which converted l
 # Conclusion
 Our finalized linear regression calculator shows that it is able to account for %80.1 of the variance in price. This final regression maximizes model score and minimizes root mean squared error based on our features.
 
-Overall, this data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) we have created a model that can predict a houses price based on these features. Our model shows that %80.1 of the variance in price can be explained by our selected features, which allows us to conclude that this model is a good fit for our data.
+Overall, this data tells us that with our selected feature columns (neighborhood, age, grade code, bedrooms, living square footage, waterfront, and view quality) combined with locational data, %80.1 of the variance in price can be explained by our model, which allows us to conclude that this model is a good fit for our data.
 
-We have used this regression calculator to predict the average housing prices for each neighborhood to show us where the predicted most-to-least expensive houses are located
+We have used this regression calculator to predict the average housing prices for each neighborhood to show us where the most-to-least expensive houses are located
 
 
 # Further Questions
